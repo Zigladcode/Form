@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Form.css" />
+  </head>
+  <body>
+    <!--=====Header Bar=====-->
+    <h2 class="fillup-heading"><i>Fill Up Your Info Here</i></h2>
+
+    <!--=====Form Input=====-->
+
+    <!--Your Name-->
+    <form
+      action="/action_page.php"
+      target="_self"
+      method="post"
+      autocomplete="on"
+      novalidate
+    >
+      <div class="container1">
+        <div id="names">
+          <fieldset style="border: solid 2px #112d32">
+            <legend style="color: #112d32;">Input Your Name</legend>
+            <label for="fname">first Name</label>
+            <input type="text" id="fname" name="fname" /><br /><br />
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" /><br /><br />
+          </fieldset>
+        </div>
+
+        <!--Your Eamil Details-->
+        <div id="emails">
+          <fieldset style="border: solid 2px #112d32">
+            <legend style="color: #112d32">Input Your Mail</legend>
+            <label for="Email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="off"
+              required
+            /><br /><br />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" /><br /><br />
+          </fieldset>
+        </div>
+      </div>
+      <br /><br />
+
+      <!--Your Phone Number and Date Of Birth-->
+      <div class="container2">
+        <div id="phone">
+          <fieldset style="border: solid 2px #112d32">
+            <legend style="color: #112d32">Input Contact and DoB</legend>
+            <label for="Phone">Phone Number</label>
+            <input
+              type="tel"
+              id="Phone"
+              name="Phone"
+              placeholder="1234-567-8901"
+              pattern="[0-9]{4}-[0-9]{3}-{0-9}{4}"
+              maxlength="11"
+              size="11"
+            /><br /><br />
+            <label for="date">Date of Birth</label>
+            <input type="date" id="date" name="date" /><br /><br />
+          </fieldset>
+        </div>
+
+        <!--Your Choice of Car-->
+        <div id="choice">
+          <fieldset style="border: solid 2px #112d32">
+            <legend style="color: #112d32">Your Choice of Cars</legend>
+            <label for="radio">Radio</label>
+            <input type="radio" name="radio" id="radio" /><br /><br />
+            <label for="Cars">Choose Your Type of Cars</label>
+            <select name="Cars" id="Cars">
+              <option value="Toyota">Toyota</option>
+              <option value="Camry">Camry</option>
+              <option value="Mazda">Mazda</option></select
+            ><br /><br />
+          </fieldset>
+        </div>
+      </div>
+      <br /><br />
+
+      <!--To search other Company-->
+      <div id="search">
+        <fieldset style="border: solid 2px #112d32">
+          <legend style="color: #112d32">Other Companies to Check</legend>
+          <input list="brower" name="brower" />
+          <datalist id="brower">
+            <option value="Ziglad.com">Ziglad.com</option>
+            <option value="Codify">Codify</option>
+            <option value="Interglobal">Interglobal</option>
+          </datalist>
+        </fieldset>
+      </div>
+
+      <!--To input Test -->
+        <div id="input">
+          <textarea name="message" id="message" rows="15" cols="50">
+Write Your Review Here</textarea>
+        </div> <br><br>
+        
+        <!-- Upload File -->
+        <div id="Upload">
+          <label for="file">Upload File</label>
+          <input type="file" id="file" name="file" /><br />
+        </div>
+      <br /><br />
+
+      <!-- Sumit and Reset Button-->
+      <div id="sumit">
+        <div id="sub">
+        <input type="submit" />
+        </div>
+        <div id="set">
+        <input type="reset" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

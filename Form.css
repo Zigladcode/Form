@@ -1,0 +1,48 @@
+body{
+    background-color: #88bdbc;
+    margin: 0;
+}
+.fillup-heading{
+    text-align: center;
+    padding: 50px 0px 30px;
+    color: #4f4a41;
+    font-size: 40px;
+}
+#names, #emails, #phone, #choice{
+    height: 100px;
+    width:900px;
+    font-size: large;
+    color: #ac3b61;
+    font-weight: bolder;
+}
+.container1, .container2{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 100px;
+    justify-content: space-between;
+}
+#search{
+    height: 100px;
+    width:875px;
+    padding-left: 50px;
+    font-size: large;
+    color: #ac3b61;
+    font-weight: bolder;
+}
+#input{
+    padding-left: 50px;
+    margin-top: -10px;
+}
+#upload{
+    padding-left: 50px;
+}
+#sumit{
+    padding-left: 50%;
+    background-color:inherit;
+    display: flex;
+    margin-top: -10px;
+}
+#sub, #set{
+    height: 200px;
+    width: 100px;
+}
